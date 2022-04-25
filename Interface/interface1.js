@@ -1,8 +1,10 @@
 "use strict";
-function hello1(person) {
-    console.log(`안녕하세요 ${person.name}입니다.`);
+///////////////////////////////////////////////////////////////
+function hello(person) {
+    console.log(`안녕하세요! ${person.name} 입니다.`);
 }
-const p1 = {
-    name: "Mark",
-    age: 39
+const p = {
+    name: 'Mark',
+    age: 35
 };
+hello(p); // 안녕하세요! Mark 입니다.
