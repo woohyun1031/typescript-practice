@@ -5,13 +5,13 @@
 //자바스크립트에서 private 지원하지 않아 오랜동안 프로퍼티나 메서드 이름 앞에 _ 를 붙여서 표현했다.
 class Person3 {
   public name!: string;
-  public age: number;
+  private _age!: number;
 
   public constructor(age?:number) { //async 불가
     if (age ===undefined) {
-      this.age = 20;
+      this._age = 20;
     }else {
-      this.age = age;
+      this._age = age;
     }
   }
   public async init() {
@@ -22,5 +22,5 @@ class Person3 {
 const ps1:Person3 = new Person3(39);
 const ps2:Person3 = new Person3(20);
 console.log(ps2); // Person1 {}
-ps2.age = 39;
+//ps2.age = 39; private로 인해 age호출 x
 console.log(ps2.name); // undefined
