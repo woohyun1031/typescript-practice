@@ -18,5 +18,5 @@ const pes3:Person5 = new Person5('3z9',39);
 const pes4:Person5 = new Person5('20');
 console.log(pes4); // Person1 {}
 //ps2.age = 39; private로 인해 age호출 x
-console.log(pes4._name); //get
-pes3._name = "change"; //set
+console.log(pes4.name); //get
+pes3.name = "change"; //set

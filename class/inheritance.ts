@@ -12,10 +12,10 @@ class Parent {
 
 class Child extends Parent {
   public gender = "male";
-
+	public _name = "Markk" //override
   constructor(age: number) {
     super("Mark Jr.", age);
-
+    //생성자 새로 초기화 시 부모생성자를 호출해야함 
     this.printName();
   }
 };
